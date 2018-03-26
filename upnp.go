@@ -110,7 +110,7 @@ func (u *UPNP) AddPortMapping(localPort, remotePort int, protocol string) error 
 	<NewInternalPort>%v</NewInternalPort>
 	<NewInternalClient>%v</NewInternalClient>
 	<NewEnabled>1</NewEnabled>
-	<NewPortMappingDescription>USATVA</NewPortMappingDescription>
+	<NewPortMappingDescription>golang upnp</NewPortMappingDescription>
 	<NewLeaseDuration>0</NewLeaseDuration>
   </m:AddPortMapping>`, ServiceType, remotePort, protocol, localPort, GetLocalAddress())
 
